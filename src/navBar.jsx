@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import "./NavBar.css";
 
-const NavBar = (props) => {
-  return (
-    <div className="navbar">
-      <div>
-        <h1 style={{margin: "1em"}}>
-          Social Feed
-        </h1>
+export default function NavBar(){
+  return(
+    <div className="NavBarContainer">
+      <div className="NavBarLeft">
+        <span className="logo">Social Feed</span>
       </div>
-    </div>
-  );
-};
+        <div className="NavBarCenter">
+        <span className="logo">Welcome</span>
+      </div>
+          <div className="topbarRight">
+            </div>
+          </div>
+  )
 
-export default NavBar;
+};

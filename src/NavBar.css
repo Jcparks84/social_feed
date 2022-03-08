@@ -1,5 +1,22 @@
-.navbar {
-    margin: 1em;
-    background-color:rgb(202, 84, 84);
-    columns: inherit;
+.NavBarcontainer {
+    height: 50px;
+    width: 100%;
+    background-color: #1877f2;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+  }
+
+  .NavBarLeft{
+    flex: 3;
+  }
+
+  .NavBarCenter{
+    flex: 5;
+  }
+
+  .NavBarRight{
+    flex: 4;
   }
