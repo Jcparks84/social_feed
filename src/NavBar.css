@@ -1,0 +1,5 @@
+.navbar {
+    margin: 1em;
+    background-color:rgb(202, 84, 84);
+    columns: inherit;
+  }

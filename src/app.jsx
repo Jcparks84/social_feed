@@ -1,13 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import React, { usestate } from 'react'
+import React, { useState } from "react";
+import "./App.css";
+// import DisplayPost from "./DisplayPosts"
+// import AddPost from "./CreatePosts"
+import NavBar from "./NavBar"
 
-function App() {
-  return (
-    <div>
-      <h3>Hello World</h3>
-    </div>
-  );
+function App(){
+    return (
+        <NavBar/>
+    )
 }
 
 export default App;
+
+
+
