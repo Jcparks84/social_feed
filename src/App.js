@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import DisplayPost from "./Components/DisplayPost/DisplayPost";
+import DisplayPost from "./Components/DisplayPost";
 
 function App(){
     const[post, setPost] = useState([{name: 'Darth Vader', post: 'Luke I am your father',}])

@@ -8,7 +8,7 @@ const DisplayPost = (props) => {
             </tr>
         </thead>
             <tbody>
-                {props.parentsPost.map((postss)=> {
+                {props.parentPost.map((postss)=> {
                     return(
                         <tr>
                             <td>{postss.name}</td>
@@ -22,4 +22,4 @@ const DisplayPost = (props) => {
       );
 }
  
-export default DisplayPost;props
+export default DisplayPost;
