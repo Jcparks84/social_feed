@@ -13,14 +13,26 @@ const DisLikeButton = (props) => {
     }
   }
   return (
-    <div>
-      <img
-        src={ThumbDownIcon}
-        className={DisLikes}
-        onClick={handleClick}
-      />
-    </div>
-  );
+      <div>
+        <button className={DisLikes} onClick={handleClick}>{props.message}</button>
+        <ThumbDownIcon/>
+      </div>
+    )
+
+
+
+
+
+
+    //     <div>
+//       <img
+//         src={ThumbDownIcon}
+//         className={DisLikes}
+//         onClick={handleClick}
+//       />
+//       <ThumbDownIcon/>
+//     </div>
+  
 };
 
 export default DisLikeButton;

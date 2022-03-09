@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./App.css";
 import DisplayPost from "./Components/DisplayPost";
 import CreatePost from "./Components/CreatePost";
+import LikeButton from "./Components/LikeButton";
+import DisLikeButton from "./Components/DislikeButton";
 import NavBar from "./Components/Navbar";
 
 function App(){
@@ -20,7 +22,7 @@ function App(){
       <div className="row">
         <CreatePost postProperty={AddNewPost}/>
       </div>
-        <div>
+        <div className="row">
         <DisplayPost parentPost={post}/> 
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+import './LikeButton.css'
 
 const LikeButton = (props) => {
   const [Like, setButtonClassLike] = useState("inactive");
@@ -12,15 +13,27 @@ const LikeButton = (props) => {
     }
   }
 
-  return (
+  return(
     <div>
-      <img
-        src={ThumbUpIcon} alt=""
-        className={Like}
-        onClick={handleClick}
-      />
+      <button className={Like} onClick={handleClick}>{props.message}</button>
+      <ThumbUpIcon/>
     </div>
-  );
-};
+  )}
+  export default LikeButton;
 
-export default LikeButton;
+
+
+
+
+  //   return (
+//     <div>
+//       <img
+//         src={ThumbUpIcon} alt=""
+//         className={Like}
+//         onClick={handleClick}
+//       />
+//       <ThumbUpIcon/>
+//     </div>
+//   );
+// };
+

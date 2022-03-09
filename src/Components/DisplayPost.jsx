@@ -1,59 +1,54 @@
 import React, { useState } from "react";
+import LikeButton from "./LikeButton";
 import DisLikeButton from "./DislikeButton";
-import LikeButton from '@mui/icons-material/ThumbUp';
+import Buttons from "./button";
+import { Button } from "bootstrap";
+
+// const DisplayPost = (props) => {
+    
+//   return (
+//   <form>
+//       <table>
+//           <tbody className='div'>
+//               {props.parentPost.map((post, index) =>{
+//                   return (
+//                       <tr key = {index}>
+//                         <td>{post.name}</td>
+//                         <td>{post.post}</td>  
+//                         <LikeButton />
+//                       </tr>
+//                   )
+//               })}
+//           </tbody>
+//       </table>
+//   </form>
+//   );
+// }
+
+// export default DisplayPost;
+
+
+
 
 const DisplayPost = (props) => {
+
   return (
-    <div className="table">
-      <div>
-        {props.parentPosts.map((post, index) => {
+    <div>
+      
+        {props.parentPost.map((post, index) => {
           return (
             <div key={index}>
-              <div>{post.name}</div>
-              <div>{post.post}</div>
-              <LikeButton className="like" />
-              <DisLikeButton message="DisLike" />
+              <h1>{post.name}</h1>
+              <h2>{post.post}</h2>
+              <Buttons/>
             </div>
+             
           );
         })}
-      </div>
+      
     </div>
   );
 };
 
 export default DisplayPost;
 
-
-
-
-
-// import React, { useState } from 'react';
-
-
-
-// const DisplayPost = (props) => {
-//     return (
-//     <table>
-//         <thead>
-//             <tr>
-//                 <th>Name</th>
-//                 <th>Post</th>
-//             </tr>
-//         </thead>
-//             <tbody>
-//                 {props.parentPost.map((postss, index)=> {
-//                     return(
-//                         <tr key={index}>
-//                             <td>{postss.name}</td>
-//                             <td>{postss.post}</td>
-//                         </tr>
-//                     )
-//                 })}
-//             </tbody>
-//     </table>
-
-//       );
-// }
-
- 
-// export default DisplayPost;
