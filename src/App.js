@@ -13,13 +13,33 @@ function App(){
     }
 
     return(
+        <div className="container-fluid">
+          <h1 style={{ margin: "1em" }}>
+            Social <small className="text-muted">Feed</small>
+      </h1>
+      <div className="row">
+        <CreatePost postProperty={AddNewPost}/>
+      </div>
         <div>
-            <NavBar/>
-            <CreatePost postProperty={AddNewPost}/>
-            <DisplayPost parentPost={post}/>
-        </div>
+        <DisplayPost parentPost={post}/> 
+      </div>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+
+//             <NavBar/>
+//             <CreatePost postProperty={AddNewPost}/>
+//             <DisplayPost parentPost={post}/>
+//         </div>
+//   );
+// }
         
        
-    );
-}
-export default App;
+// export default App;
+

@@ -16,7 +16,7 @@ const CreatePost = (props) => {
 
     }
 
-    return (
+return (
         <form onSubmit={handleSubmit}>
             <label>Name</label>
             <input type='Name' value={name}onChange={(event)=>setName(event.target.value)}/>
@@ -28,3 +28,10 @@ const CreatePost = (props) => {
 }
  
 export default CreatePost;
+
+
+
+
+
+
+        
