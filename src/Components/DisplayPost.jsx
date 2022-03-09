@@ -1,34 +1,6 @@
 import React, { useState } from "react";
-import LikeButton from "./LikeButton";
-import DisLikeButton from "./DislikeButton";
-import Buttons from "./button";
-import { Button } from "bootstrap";
-
-// const DisplayPost = (props) => {
-    
-//   return (
-//   <form>
-//       <table>
-//           <tbody className='div'>
-//               {props.parentPost.map((post, index) =>{
-//                   return (
-//                       <tr key = {index}>
-//                         <td>{post.name}</td>
-//                         <td>{post.post}</td>  
-//                         <LikeButton />
-//                       </tr>
-//                   )
-//               })}
-//           </tbody>
-//       </table>
-//   </form>
-//   );
-// }
-
-// export default DisplayPost;
-
-
-
+import Buttons from "./Buttons";
+import './DisplayPost.css'
 
 const DisplayPost = (props) => {
 
@@ -38,8 +10,8 @@ const DisplayPost = (props) => {
         {props.parentPost.map((post, index) => {
           return (
             <div key={index}>
-              <h1>{post.name}</h1>
-              <h2>{post.post}</h2>
+              <h4>{post.name}</h4>
+              <h4>{post.post}</h4>
               <Buttons/>
             </div>
              

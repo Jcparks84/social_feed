@@ -1,0 +1,9 @@
+.active-like{
+    background-color: #1f07f7;
+}
+.active-dislike{
+    background-color: rgb(223, 61, 61);
+}
+.inactive{
+    background-color: gray;
+}

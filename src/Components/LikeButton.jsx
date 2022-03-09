@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
-import './LikeButton.css'
 
 const LikeButton = (props) => {
   const [Like, setButtonClassLike] = useState("inactive");
